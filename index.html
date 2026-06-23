@@ -17,12 +17,13 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20">
                 <div class="flex items-center py-2">
-                    <!-- Updated Logo Integration -->
                     <img src="stellar_logo.png" alt="Stellar Achievers Logo" class="h-full object-contain">
                 </div>
                 <div class="flex items-center space-x-8">
                     <a href="#courses" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium">Test Prep</a>
-                    <a href="#immigration" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium">Immigration Services</a>
+                    <a href="#immigration" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium">Immigration</a>
+                    <!-- Added Location Link -->
+                    <a href="#location" class="hidden md:block text-gray-600 hover:text-blue-900 font-medium">Location</a>
                     <a href="#contact" class="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2 rounded-md font-semibold transition shadow-md">Apply Now</a>
                 </div>
             </div>
@@ -59,7 +60,6 @@
                 <p class="mt-4 text-lg text-gray-600">Tailored coaching batches designed to hit your target score.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Course Cards -->
                 <div class="bg-white rounded-xl shadow-md p-8 text-center hover:shadow-xl transition border-t-4 border-blue-900">
                     <h3 class="text-2xl font-bold mb-4 text-blue-900">PTE</h3>
                     <p class="text-gray-600 mb-6">AI-scored mock tests and proven strategies for rapid score improvement.</p>
@@ -115,12 +115,10 @@
                     <p class="text-blue-200">Leave your details below and choose how you'd like us to reach back out to you.</p>
                 </div>
                 
-                <!-- Dual-Action Form -->
                 <form id="contactForm" class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <input type="text" id="waName" placeholder="Full Name" required class="w-full p-4 rounded bg-blue-800 text-white border border-blue-700 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
                         <input type="tel" id="waPhone" placeholder="Contact Number" required class="w-full p-4 rounded bg-blue-800 text-white border border-blue-700 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
-                        <!-- Added Email Input -->
                         <input type="email" id="waEmail" placeholder="Email Address" required class="w-full md:col-span-2 p-4 rounded bg-blue-800 text-white border border-blue-700 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500">
                     </div>
                     
@@ -135,7 +133,6 @@
                     
                     <textarea id="waMessage" placeholder="Any specific questions or target countries?" rows="3" class="w-full p-4 rounded bg-blue-800 text-white border border-blue-700 placeholder-blue-300 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
                     
-                    <!-- Buttons Container -->
                     <div class="flex flex-col md:flex-row gap-4 pt-2">
                         <button type="button" id="btnWhatsapp" class="w-full bg-[#25D366] hover:bg-[#1ebe5d] text-white p-4 rounded font-bold text-lg transition flex justify-center items-center shadow-lg">
                             <i class="fab fa-whatsapp text-2xl mr-3"></i> WhatsApp Us
@@ -145,20 +142,55 @@
                         </button>
                     </div>
                 </form>
-
             </div>
         </div>
     </section>
 
-    <!-- Footer Updated From Diff Image -->
+    <!-- NEW: Locate Us / Map Section -->
+    <section id="location" class="py-20 bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Locate Us</h2>
+                <p class="mt-4 text-lg text-gray-600">Visit our center for a face-to-face consultation.</p>
+            </div>
+            
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col md:flex-row">
+                <!-- Address Details Box -->
+                <div class="w-full md:w-1/3 p-8 bg-blue-900 text-white flex flex-col justify-center">
+                    <h3 class="text-2xl font-bold mb-6">Stellar Achievers</h3>
+                    <div class="flex items-start mb-6">
+                        <i class="fas fa-map-marker-alt text-orange-500 text-xl mt-1 mr-4"></i>
+                        <p class="text-blue-100 text-lg leading-relaxed">
+                            2nd Floor, Shree Balaji Complex,<br>
+                            SCO-18, Old Ambala Rd, Dhakoli,<br>
+                            Zirakpur, Punjab 140603,<br>
+                            India
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Google Maps iFrame Placeholder -->
+                <div class="w-full md:w-2/3 h-80 md:h-auto min-h-[400px]">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d197.2043391054816!2d76.84388246449811!3d30.65195937863906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390f959ef541d413%3A0xe11298bf75a37e0d!2sVision%20Language%20Experts%20(VLE)%20Zirakpur%20-%20Best%20PTE%20Coaching!5e1!3m2!1sen!2sin!4v1782238497501!5m2!1sen!2sin"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 py-12 text-center">
         <div class="max-w-7xl mx-auto px-4">
-            <h3 class="text-2xl font-bold text-white mb-4">Stellar Achievers</h3>
-            <!-- Location Updated -->
-            <p class="mb-2"><i class="fas fa-map-marker-alt mr-2"></i> Dhakoli, Zirakpur, Punjab, India</p>
-            <!-- Email Updated -->
-            <p class="mb-6"><i class="fas fa-envelope mr-2"></i> hgoyal987789@gmail.com</p>
-            <!-- Copyright Updated -->
+            <h3 class="text-2xl font-bold text-white mb-4">Contact Us</h3>
+            <p class="mb-2"><i class="fas fa-phone-alt mr-2"></i> +91 XXXXX XXXXX</p>
+            <p class="mb-6"><i class="fas fa-envelope mr-2"></i> stellerimmigration@gmail.com</p>
             <p class="text-sm mt-8 border-t border-gray-800 pt-8">&copy; 2026 Stellar Achievers. All rights reserved.</p>
         </div>
     </footer>
@@ -169,14 +201,13 @@
         
         // --- WHATSAPP LOGIC ---
         document.getElementById('btnWhatsapp').addEventListener('click', function(e) {
-            // Check if form is valid before opening WhatsApp
             if (!form.checkValidity()) {
                 form.reportValidity();
                 return;
             }
             
             // 🚨 IMPORTANT: Change this to your actual center WhatsApp number
-            const centerNumber = "7986017811"; 
+            const centerNumber = "919999999999"; 
 
             const name = document.getElementById('waName').value;
             const phone = document.getElementById('waPhone').value;
@@ -203,7 +234,6 @@
         form.addEventListener('submit', function(e) {
             e.preventDefault(); 
             
-            // The destination email address from your diff
             const targetEmail = "stellerimmigration@gmail.com";
 
             const name = document.getElementById('waName').value;
@@ -212,7 +242,6 @@
             const course = document.getElementById('waCourse').value;
             const message = document.getElementById('waMessage').value;
 
-            // Format subject and body for the email client
             const subject = encodeURIComponent(`Website Inquiry: ${course} - ${name}`);
             let bodyText = `New Inquiry Details:%0D%0A%0D%0A`;
             bodyText += `Name: ${name}%0D%0A`;
@@ -221,7 +250,6 @@
             bodyText += `Interested In: ${course}%0D%0A%0D%0A`;
             bodyText += `Message:%0D%0A${message}`;
 
-            // Opens default mail app (Outlook, Apple Mail, Gmail) pre-filled
             const mailtoURL = `mailto:${targetEmail}?subject=${subject}&body=${bodyText}`;
             window.location.href = mailtoURL;
         });
